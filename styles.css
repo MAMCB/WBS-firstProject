@@ -1,7 +1,7 @@
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: #6A80FF;
+    background-color: #6B81FF;
     
 }
 
@@ -28,4 +28,40 @@ nav li{
     height:2rem;
     text-decoration: none;
     text-align: center;
+}
+
+section{
+    background-color:#AAA080 ;
+    
+}
+#hero{
+    text-align: center;
+    padding: 5rem;
+}
+#hero p{
+    margin:auto;
+    width:50%;
+}
+
+#section2{
+    margin:1rem 0rem;
+    padding:5rem ;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#section2 div{
+    padding: 5rem;
+    text-align: center;
+    width:30%;
+}
+
+#section2 a{
+    margin:2rem;
+}
+
+#section2 img{
+    width:30rem;
+    
 }
