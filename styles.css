@@ -1,0 +1,31 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #6A80FF;
+    
+}
+
+nav ul{
+    width:50rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li{
+    list-style-type: none;
+    margin:1rem;
+}
+#logo{
+    width:5rem;
+}
+
+.button{
+    display: inline-block;
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    margin:auto;
+    width:8rem;
+    height:2rem;
+    text-decoration: none;
+    text-align: center;
+}
