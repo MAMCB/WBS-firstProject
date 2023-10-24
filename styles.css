@@ -141,3 +141,19 @@ footer form>input, footer form>textarea{
 footer form>input{
     height:2rem;
 }
+
+p{
+    font-size: 20px;
+}
+
+.button:hover,.gridButton:hover,form>button:hover{
+    background-color: goldenrod;
+}
+
+footer a:hover,#footerLogo:hover{
+    transform: scale(1.2,1.2);
+}
+
+#section2 img:hover{
+    transform: rotate3d(1, 2, 3, 45deg);
+}
