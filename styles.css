@@ -65,3 +65,38 @@ section{
     width:30rem;
     
 }
+
+#section3{
+    margin: 1rem 0rem;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
+
+#Grid{
+    margin:3rem;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    place-items: center;
+    width:auto;
+    
+    
+    
+    
+}
+
+.gridButton{
+    text-decoration: none;
+    text-align: center;
+    background-color: whitesmoke;
+    width:8rem;
+    height:5rem;
+    padding: 1rem;
+    font-size: 25px;
+}
