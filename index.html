@@ -36,10 +36,10 @@
         <section id="section2">
 
             <div>
-                <p>When stuck with a coding bug, often talking it out as if explaining it to a rubber duck will help you
+                <p id="duckTalk">When stuck with a coding bug, often talking it out as if explaining it to a rubber duck will help you
                     find the solution by yourself. Our friend Rubby is here for you whenever you need to cool of some
                     burning problems.</p>
-                <a href="" class="button" id="talk-button">Talk</a>
+                <a href="javascript:talk()" class="button" id="talk-button">Talk</a>
             </div>
             <img src="./images/—Pngtree—rubber duck bath bathroom summer_6325645.png" alt="Coding image">
 
@@ -49,7 +49,7 @@
 
 
         <section id="section3">
-            <h2>In case of Emergency click on:</h2>
+            <h2>In case of Emergency <a href="javascript:breakGlass()">BREAK GLASS</a></h2>
             <div id="glass">
                 
 
@@ -87,6 +87,16 @@
         <a href="#hero"><img src="./images/WBS-Coding-Logo.png" alt="logo" id="footerLogo"></a>
 
     </footer>
+    <script>
+    function breakGlass(){document.getElementById("glass").style.display="none";
+
+    }
+
+    function talk(){
+        document.getElementById("duckTalk").innerText="QUACK!";
+        document.getElementById("duckTalk").style.fontSize="50px";
+    }
+    </script>
 
 </body>
 

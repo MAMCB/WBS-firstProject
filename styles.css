@@ -181,9 +181,9 @@ section, footer{
         border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-#glass:hover{
+/* #glass:hover{
     z-index:-1;
-}
+} */
 
 .gridButton{
     text-decoration: none;
