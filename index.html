@@ -26,17 +26,17 @@
     <main>
         <section id="hero">
             <h1>&ltHello World/&gt</h1>
-            <p>Introduction text,Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nisi magni quae? Modi
-                molestiae labore
-                quo consequuntur quam velit porro doloremque impedit eum magni fugit placeat itaque, quaerat blanditiis
-                soluta!</p>
+            <p>Welcome to the wonderfull world of coding, expect lots of headaches but also lots of exciting surprises.
+                As you improve this skill you'll see that you are gaining a great superpower capable of creating amazing
+                things. This guide will help you through this jorney. Lets jump in to this new adventure together!</p>
 
         </section>
 
         <section id="section2">
 
             <div>
-                <p id="duckTalk">When stuck with a coding bug, often talking it out as if explaining it to a rubber duck will help you
+                <p id="duckTalk">When stuck with a coding bug, often talking it out as if explaining it to a rubber duck
+                    will help you
                     find the solution by yourself. Our friend Rubby is here for you whenever you need to cool of some
                     burning problems.</p>
                 <a href="javascript:talk()" class="button" id="talk-button">Talk</a>
@@ -49,22 +49,27 @@
 
 
         <section id="section3">
+
             <h2>In case of Emergency <a href="javascript:breakGlass()">BREAK GLASS</a></h2>
+
+
+
             <div id="glass">
-                
+
 
             </div>
             <div id="Grid">
-                <a href="https://discord.com/channels/641221910146842644/653931630162870302" class="gridButton">Discord
+                <a href="https://discord.com/channels/641221910146842644/653931630162870302" target="_blank"
+                    class="gridButton">Discord
                     Student Help</a>
                 <a href="https://stackoverflow.com/" target="_blank" class="gridButton">Stack Overflow</a>
-                <a href="https://developer.mozilla.org/"target="_blank" class="gridButton">MDN</a>
+                <a href="https://developer.mozilla.org/" target="_blank" class="gridButton">MDN</a>
                 <a href="https://www.w3schools.com/" target="_blank" class="gridButton">W3</a>
                 <a href="https://medium.com/" target="_blank" class="gridButton">Medium</a>
                 <a href="https://www.youtube.com/c/Freecodecamp" target="_blank" class="gridButton">Podcast</a>
-            
+
             </div>
-          
+
 
         </section>
     </main>
@@ -88,14 +93,15 @@
 
     </footer>
     <script>
-    function breakGlass(){document.getElementById("glass").style.display="none";
+        function breakGlass() {
+            document.getElementById("glass").style.display = "none";
 
-    }
+        }
 
-    function talk(){
-        document.getElementById("duckTalk").innerText="QUACK!";
-        document.getElementById("duckTalk").style.fontSize="50px";
-    }
+        function talk() {
+            document.getElementById("duckTalk").innerText = "QUACK!";
+            document.getElementById("duckTalk").style.fontSize = "50px";
+        }
     </script>
 
 </body>

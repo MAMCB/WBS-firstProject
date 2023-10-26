@@ -53,18 +53,61 @@ nav li{
 
 section, footer{
     background-color:#AAA080 ;
-    border-radius: 10px;
+    
     
 }
 #hero{
     
     text-align: center;
     padding: 5rem;
-    padding-top: 8rem;
+    padding-top: 18rem;
+    padding-bottom: 5rem;
     background-color: #ccccdf;
 }
+
+#hero h1{
+    overflow: hidden;
+        /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange;
+        /* The typwriter cursor */
+        white-space: nowrap;
+        /* Keeps the content on a single line */
+        margin: 0 auto;
+        /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em;
+        /* Adjust as needed */
+        animation:
+            typing 3.5s steps(40, end) infinite,
+            blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 20%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
 #hero p{
-    margin:auto;
+    margin:3rem auto;
+    line-height: 2rem;
     width:50%;
 }
 
@@ -95,7 +138,7 @@ section, footer{
         transform: translate3d(0,0,0);
     }
     to{
-        transform: translate3d(0,20px,0);
+        transform: translate3d(0,25px,0);
     }
 }
 
@@ -114,7 +157,7 @@ section, footer{
         }
     
         to {
-            transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -25px, 0);
         }
 
 }
@@ -142,25 +185,26 @@ section, footer{
 
 
 #section3{
-    /* margin: 0rem 0rem 1rem 0rem; */
+    
+    
+    resize: none;
     padding: 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 8rem;
-    background: repeating-linear-gradient(45deg,
-                red,
-                yellow 50px,
-                red 50px,
-                black 60px);
+    background-color: #e5e5f7;
+   
     
     
         
         
 }
+
+
 #section3 h2{
-    font-size: 50px;
+      font-size: 50px;  
     font-weight: 600;
     color:white;
     -webkit-text-stroke: 0.5px black;
@@ -168,7 +212,28 @@ section, footer{
     border-radius: 15px;
     padding:1rem;
     border: 4px solid black;
+    animation:pulsate 0.5s linear infinite alternate;
     
+   
+    
+    
+}
+
+@keyframes pulsate{
+    from{
+        background: repeating-linear-gradient(45deg,
+                    red,
+                    yellow 50px,
+                    red 50px,
+                    black 60px);
+    }
+    to{
+        background: repeating-linear-gradient(45deg,
+                    red,
+                    yellow 25px,
+                    red 25px,
+                    black 30px);
+    }
 }
 
 #Grid{
@@ -188,6 +253,7 @@ section, footer{
 #glass{
     margin-bottom: -23rem;
     z-index: 2;
+    
     /* From https://css.glass */
         width:40rem;
         height:20rem;
@@ -215,10 +281,14 @@ section, footer{
 }
 
 footer{
+   
+    
     text-align: center;
     padding:2rem;
     padding-top: 8rem;
     background-color: #ccccdf;
+    
+   
 
 }
 
