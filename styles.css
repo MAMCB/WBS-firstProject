@@ -9,7 +9,7 @@ nav{
     position: fixed;
     display: flex;
     justify-content: space-between;
-    z-index: 2;
+    z-index: 3;
     width:100%;
     /* From https://css.glass */
         background: rgba(6, 32, 125, 0.2);
@@ -48,6 +48,7 @@ nav li{
     text-align: center;
     border-radius: 10px;
     box-shadow: 3px 4px;
+    transition: ease-in-out 0.5s;
 }
 
 section, footer{
@@ -133,6 +134,12 @@ section, footer{
     
 }
 
+#talk-button:active{
+   transform: rotate(-20deg)
+}
+
+
+
 #section3{
     margin: 0rem 0rem 1rem 0rem;
     padding: 2rem;
@@ -141,6 +148,8 @@ section, footer{
     flex-direction: column;
     align-items: center;
     padding-top: 8rem;
+    
+        
         
 }
 
@@ -156,7 +165,24 @@ section, footer{
     
     
     
-    
+}
+
+#glass{
+    margin-bottom: -23rem;
+    z-index: 2;
+    /* From https://css.glass */
+        width:40rem;
+        height:20rem;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#glass:hover{
+    z-index:-1;
 }
 
 .gridButton{
@@ -169,6 +195,7 @@ section, footer{
     font-size: 25px;
     border-radius: 10px;
     box-shadow: 3px 4px;
+    transition: ease-in-out 0.5s;
 }
 
 footer{
@@ -185,7 +212,8 @@ footer form{
 }
 
 footer form>button{
-    margin:2rem 12rem;
+    width: 5rem;
+    margin:2rem auto;
     height:2.5rem;
     border-radius: 10px;
     box-shadow: 3px 4px;
@@ -197,6 +225,7 @@ footer form>button{
     height: 5rem;
     border-radius: 50%;
     box-shadow: 3px 4px;
+    transition: ease-in-out 0.5s;
 }
 
 footer form>input, footer form>textarea{
