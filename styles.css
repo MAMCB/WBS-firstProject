@@ -79,11 +79,42 @@ section, footer{
 
 }
 
-#waves{
+#waves-1{
     margin-top: -15rem;
     z-index: -1;
-    width:100rem;
+    width:100%;
+    animation: waves_ondulate 10s linear infinite alternate;
     
+    
+}
+
+@keyframes waves_ondulate{
+    from{
+        transform: translate3d(0,0,0);
+    }
+    to{
+        transform: translate3d(0,20px,0);
+    }
+}
+
+#waves-2{
+    margin-top: -16rem;
+    
+    z-index: -2;
+    width: 100%;
+    animation: waves_ondulate_reverse 10s linear infinite alternate;
+    
+}
+
+@keyframes waves_ondulate_reverse{
+    from {
+            transform: translate3d(0, 0, 0);
+        }
+    
+        to {
+            transform: translate3d(0, -20px, 0);
+        }
+
 }
 
 #section2 div{
