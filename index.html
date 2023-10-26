@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe-Integration</title>
+    <title>Your Rubber Ducky</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,32 +26,50 @@
     <main>
         <section id="hero">
             <h1>&ltHello World/&gt</h1>
-            <p>Introduction text,Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nisi magni quae? Modi
-                molestiae labore
-                quo consequuntur quam velit porro doloremque impedit eum magni fugit placeat itaque, quaerat blanditiis
-                soluta!</p>
+            <p>Welcome to the wonderfull world of coding, expect lots of headaches but also lots of exciting surprises.
+                As you improve this skill you'll see that you are gaining a great superpower capable of creating amazing
+                things. This guide will help you through this jorney. Lets jump in to this new adventure together!</p>
 
         </section>
+
         <section id="section2">
+
             <div>
-                <p>Text about this page, Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quam
-                    aliquam dolore culpa reprehenderit earum recusandae praesentium eum quisquam consequatur.</p>
-                    <a href="" class="button">Button</a>
+                <p id="duckTalk">When stuck with a coding bug, often talking it out as if explaining it to a rubber duck
+                    will help you
+                    find the solution by yourself. Our friend Rubby is here for you whenever you need to cool of some
+                    burning problems.</p>
+                <a href="javascript:talk()" class="button" id="talk-button">Talk</a>
             </div>
-            <img src="https://pilbox.themuse.com/image.jpg?filter=antialias&h=385&opt=1&pos=top-left&prog=1&q=keep&url=https%3A%2F%2Fcms-assets.themuse.com%2Fmedia%2Flead%2F01212022-1047259374-coding-classes_scanrail.jpg&w=700" alt="Coding image">
+            <img src="./images/—Pngtree—rubber duck bath bathroom summer_6325645.png" alt="Coding image">
 
         </section>
+        <img src="./images/vecteezy_sea-waves-clipart-design-illustration_9302625_989.png" id="waves-1" alt="waves">
+        <img src="./images/vecteezy_sea-waves-clipart-design-illustration_9302625_989.png" id="waves-2" alt="waves">
+
+
         <section id="section3">
-            <h2>In case of Emergency click on:</h2>
-            <div id="Grid">
-                <a href="https://discord.com/channels/641221910146842644/653931630162870302" class="gridButton">Discord Student Help</a>
-                <a href="https://stackoverflow.com/" class="gridButton">Stack Overflow</a>
-                <a href="https://developer.mozilla.org/" class="gridButton">MDN</a>
-                <a href="https://www.w3schools.com/" class="gridButton">W3</a>
-                <a href="https://medium.com/" class="gridButton">Medium</a>
-                <a href="https://www.youtube.com/c/Freecodecamp" class="gridButton">Podcast</a>
-                
+
+            <h2>In case of Emergency <a href="javascript:breakGlass()">BREAK GLASS</a></h2>
+
+
+
+            <div id="glass">
+
+
             </div>
+            <div id="Grid">
+                <a href="https://discord.com/channels/641221910146842644/653931630162870302" target="_blank"
+                    class="gridButton">Discord
+                    Student Help</a>
+                <a href="https://stackoverflow.com/" target="_blank" class="gridButton">Stack Overflow</a>
+                <a href="https://developer.mozilla.org/" target="_blank" class="gridButton">MDN</a>
+                <a href="https://www.w3schools.com/" target="_blank" class="gridButton">W3</a>
+                <a href="https://medium.com/" target="_blank" class="gridButton">Medium</a>
+                <a href="https://www.youtube.com/c/Freecodecamp" target="_blank" class="gridButton">Podcast</a>
+
+            </div>
+
 
         </section>
     </main>
@@ -62,9 +83,26 @@
             <button type="submit"> Submit</button>
         </form>
         <p>Proudly created by Miguel Borges</p>
-        <a href="#logo"><img src="./images/WBS-Coding-Logo.png" alt="logo" id="footerLogo"></a>
+
+        <a href="https://pngtree.com/freepng/rubber-duck-bath-bathroom-summer_6325645.html?sol=downref&id=bef"
+            id="duck_link">rubber
+            duck PNG Designed By tree</a>
+        <a href="https://www.vecteezy.com/free-png/wave" id="waves_link">Wave PNGs by Vecteezy</a>
+
+        <a href="#hero"><img src="./images/WBS-Coding-Logo.png" alt="logo" id="footerLogo"></a>
 
     </footer>
+    <script>
+        function breakGlass() {
+            document.getElementById("glass").style.display = "none";
+
+        }
+
+        function talk() {
+            document.getElementById("duckTalk").innerText = "QUACK!";
+            document.getElementById("duckTalk").style.fontSize = "50px";
+        }
+    </script>
 
 </body>
 
